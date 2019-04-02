@@ -1,4 +1,6 @@
 # WBConfUI
+This project is live and hosted in Azure.
+https://wbconfui.azurewebsites.net/home
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
 
