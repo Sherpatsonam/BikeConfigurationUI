@@ -1,0 +1,42 @@
+
+<div align="center"  *ngIf="bike">
+        
+   
+                    <form class="mtb-form">
+                            <mat-form-field class="mtb-full-width">
+                               <input [(ngModel)]="bike.name" matInput placeholder="Bike Name" name="name">
+                            </mat-form-field>
+                            <mat-form-field class="mtb-full-width">
+                                    <input  [(ngModel)]="bike.initialCost" matInput placeholder="Walmart Price" name="initialCost">
+                            </mat-form-field>
+                            <mat-form-field class="mtb-full-width">
+                                    <input [(ngModel)]="bike.upgradedCost" matInput placeholder="Cost of Upgrade" name="upgradedCost">
+                            </mat-form-field>
+                            <mat-form-field class="mtb-full-width">
+                                    <input [(ngModel)]="bike.walmartId" matInput placeholder="Walmart ID" name="walmartId">
+                        </mat-form-field>
+                            
+                      
+                           
+                             
+                           <button mat-button (click)="addBike()">Add <mat-icon>build</mat-icon>
+                           </button>
+                    </form>
+            
+    
+</div>
+       
+
+    <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile>
+            <img src='./assets/mtb4.jpg' />
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <img src='./assets/mtb3.jpg' />
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <img src='./assets/mtb2.jpg' />
+        </mat-grid-tile>
+      </mat-grid-list>
+    
+    

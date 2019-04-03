@@ -1,0 +1,56 @@
+<div>
+        <mat-card-header>
+                <div mat-card-avatar></div>
+                <mat-card-title>MTB Configuration</mat-card-title>
+                <label>ID: </label><label>{{data.configId}}</label>
+               
+              </mat-card-header>
+        
+        
+        
+        <mat-dialog-content>
+        
+        <mat-card-content>
+           
+                        <img src='./assets/mtb5.jpg' /><br>
+                        <td>
+                                <mat-form-field >
+                                        <input [(ngModel)]="data.pedal" matInput placeholder="Pedal" name="pedal">
+                                </mat-form-field><br>
+                                <mat-form-field >
+                                        <input [(ngModel)]="data.seatPost" matInput placeholder="Seat Post" name="seatPost">
+                                </mat-form-field><br>
+                                <mat-form-field >
+                                        <input [(ngModel)]="data.seat" matInput placeholder="Seat" name="seat">
+                                </mat-form-field><br>
+                                <mat-form-field >
+                                        <input [(ngModel)]="data.brake" matInput placeholder="Brakes" name="brake">
+                                </mat-form-field><br>
+                               
+                        </td>
+                        
+                        <td> <mat-form-field >
+                                <input [(ngModel)]="data.stem" matInput placeholder="Stem" name="stem">
+                        </mat-form-field><br>
+                        <mat-form-field >
+                                <input [(ngModel)]="data.handlebar" matInput placeholder="Handle Bar" name="handlebar">
+                        </mat-form-field><br>
+                        <mat-form-field >
+                                <input [(ngModel)]="data.derailleurs" matInput placeholder="Derailleurs" name="derailleurs">
+                        </mat-form-field><br>
+                        <mat-form-field >
+                                <input [(ngModel)]="data.chainSet" matInput placeholder="ChainSet" name="chainSet">
+                        </mat-form-field><br>
+                                
+                              
+                        </td>
+
+               
+        </mat-card-content>
+        </mat-dialog-content>
+        
+        <mat-dialog-actions>
+                <button mat-button (click)="onNoClick()">Cancel<mat-icon>cancel</mat-icon></button>
+                <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Ok<mat-icon>done</mat-icon></button>
+        </mat-dialog-actions>
+</div>
