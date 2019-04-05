@@ -1,5 +1,5 @@
 # WBConfUI
-This project is live and hosted in Azure.
+WBConfUi is a user friendly UserInterface to create, edit and delete Bike with different configuration. This Application lets user to configure a bike and make request to a Web API WBconf which is connected to a database.This project is live and hosted in Azure.
 https://wbconfui.azurewebsites.net/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.2.
@@ -9,11 +9,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Connecting to Backend API
-The bikeconfiguration code can be found here:
+The WbConf Web API code can be found here:
 https://github.com/Sherpatsonam/BikeConfigurationAPI
-
-Change the localhost port no: to the port no: where BikeConfiguration API is deployed in environment.ts.
-apiUrl='https://localhost:44381/api/bike/';
 
 
 
