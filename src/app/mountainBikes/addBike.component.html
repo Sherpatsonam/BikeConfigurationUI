@@ -27,7 +27,7 @@
 </div>
        
 
-    <mat-grid-list cols="3" rowHeight="2:1">
+    <mat-grid-list [cols]="breakpoint"  (window:resize)="onResize($event)" [rowHeight]="rowheight">
         <mat-grid-tile>
             <img src='./assets/mtb4.jpg' />
         </mat-grid-tile>

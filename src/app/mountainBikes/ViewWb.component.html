@@ -1,4 +1,4 @@
-<mat-grid-list [cols]="breakpoint"  (window:resize)="onResize($event)" >
+<mat-grid-list [cols]="breakpoint"  (window:resize)="onResize($event)" [rowHeight]="rowheight" >
     <mat-grid-tile  *ngFor="let bike of mtBikes">
         <mat-card class="mtb-card">
   <mat-card-header>

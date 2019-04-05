@@ -13,17 +13,21 @@ export class ViewWbComponent implements OnInit{
   
 mtBikes:IMtBike;
 breakpoint:number;
+rowheight:string;
 
 constructor(private api:ApiService){}
 ngOnInit(){
     this.getBikes();
     if (window.innerWidth < 826){
         this.breakpoint=1;
+        this.rowheight="1:1.35";
     }
     else if (window.innerWidth < 1244) {
         this.breakpoint=2;
+        this.rowheight="1:1";
     } else {
         this.breakpoint=3;
+       this.rowheight="1:1";
     }
        
    }
@@ -31,11 +35,14 @@ ngOnInit(){
  
     if (window.innerWidth <826){
         this.breakpoint=1;
+        this.rowheight="1:1.35";
     }
     else if (window.innerWidth < 1244) {
         this.breakpoint=2;
+        this.rowheight="1:1";
     } else {
         this.breakpoint=3;
+        this.rowheight="1:1";
     }
   
   }
